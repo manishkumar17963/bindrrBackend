@@ -58,8 +58,8 @@ var authRequired = function (model) {
                     decoded = jsonwebtoken_1.default.verify(token, process.env.JWT_SECRET);
                     console.log(decoded);
                     return [4 /*yield*/, artist_1.default.findOne({
-                        // _id: decoded._id,
-                        // "tokens.token": token,
+                            _id: decoded._id,
+                            "tokens.token": token,
                         })];
                 case 1:
                     user = _b.sent();

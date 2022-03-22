@@ -33,8 +33,8 @@ const authRequired =
       console.log(decoded);
 
       const user = await Artist.findOne({
-        // _id: decoded._id,
-        // "tokens.token": token,
+        _id: decoded._id,
+        "tokens.token": token,
       });
       console.log("user", user);
 

@@ -2,7 +2,6 @@ require("dotenv").config();
 import express from "express";
 import connect from "./config/databaseConfig";
 import morgan from "morgan";
-import swaggerUI from "swagger-ui-express";
 
 import ArtistRouter from "./api/v1/routes/artist";
 import UrlRouter from "./api/v1/routes/url";
